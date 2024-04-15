@@ -9,7 +9,7 @@ import {
   BoxArrowInRight,
 } from "react-bootstrap-icons/dist";
 // import * as {HouseAddFill} from "react-bootstrap-icons";
-export const SideBarData = [
+export const SideBarMainData = [
   {
     key: "1",
     path: "/",

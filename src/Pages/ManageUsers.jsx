@@ -7,13 +7,12 @@ import {
   ChevronCompactDown,
   Trash3,
 } from "react-bootstrap-icons/dist";
-
-import ReviewsTable from "./Reviews/ReviewsTable";
+import PaginationManageUser from "../Pages/ManageUsers/PaginationManageUser.jsx";
 import ManageUsersTable from "./ManageUsers/ManageUsersTable";
 const ManageUsers = () => {
   return (
-    <>
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-6 px-8 py-4 min-h-100">
+    <div className="bg-sky-200">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-6 px-8 py-8 h-full bg-white">
         <Input className="w-full sm:w-auto" />
       </div>
       <div className=" border-gray-200 w-full px-8 py-8 bg-sky-100">
@@ -47,8 +46,9 @@ const ManageUsers = () => {
         <div className="bg-white my-4 rounded-xl">
           <ManageUsersTable />
         </div>
+        <PaginationManageUser />
       </div>
-    </>
+    </div>
   );
 };
 
