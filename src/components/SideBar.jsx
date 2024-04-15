@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link, useLocation, NavLink } from "react-router-dom";
-
+import "./SideBar.css";
 import companyLogo from "../assets/companyLogo.png";
 import hamBurger from "../assets/arrowleft.svg";
 
