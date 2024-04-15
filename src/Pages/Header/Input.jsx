@@ -9,7 +9,7 @@ function Input() {
         placeholder="Search..."
         className="px-4 py-2 w-full sm:w-auto outline-none bg-sky-100"
       />
-      <div className="my-auto sm:mt-0 sm:ml-2 text-white bg-sky-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <div className="my-auto sm:mt-0 sm:ml-2 text-white bg-sky-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2   ">
         <Search />
       </div>
     </form>
