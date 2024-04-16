@@ -69,7 +69,7 @@ const OrdersTable = () => {
                 "text-orange-500 bg-orange-200  rounded-sm cursor-pointer";
             } else if (item.paymentStatus === "Processing") {
               paymentStatusClass =
-                "text-blue-400 bg-blue-200  rounded-sm cursor-pointer";
+                "text-sky-600 bg-blue-200  rounded-sm cursor-pointer";
             }
 
             if (item.orderStaus === "Completed") {
@@ -80,7 +80,7 @@ const OrdersTable = () => {
                 "text-orange-500 bg-orange-200   rounded-sm cursor-pointer";
             } else if (item.orderStaus === "Processing") {
               orderStausClass =
-                "text-blue-400 bg-blue-200   rounded-sm cursor-pointer";
+                "text-sky-600 bg-sky-200   rounded-sm cursor-pointer";
             }
 
             return (

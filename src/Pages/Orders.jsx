@@ -9,8 +9,8 @@ import OrdersTable from "./Orders/OrdersTable";
 const Orders = () => {
   return (
     <>
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-6 px-8 py-4">
-        <Input className="w-full sm:w-auto" />
+      <div className="flex columns-8 gap-6 px-8 py-4">
+        <Input />
       </div>
       <div className=" border-gray-200 w-full px-8 py-8 bg-sky-100">
         <div>
@@ -39,7 +39,7 @@ const Orders = () => {
             <ArrowCounterclockwise className="inline text-center mb-1/2 w-10" />
             Reset Filter
           </button>
-          <button className="bg-white px-4 py-3 rounded-r-lg text-sky-400">
+          <button className="bg-white px-4 py-3 rounded-r-lg text-sky-600">
             Export Report
           </button>
         </div>

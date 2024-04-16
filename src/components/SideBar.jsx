@@ -1,12 +1,11 @@
 import React from "react";
 
-import { Link, useLocation, NavLink } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 
 import companyLogo from "../assets/companyLogo.png";
-import hamBurger from "../assets/arrowleft.svg";
 
 import { FaArrowRightLong, FaChevronRight } from "react-icons/fa6";
-import { FiMinus, FiArrowUp } from "react-icons/fi";
+
 import state from "../proxyState/store";
 import { useSnapshot } from "valtio";
 import { SideBarMainData, SideBarPages, SideBarUser } from "./SideBarData";
@@ -70,7 +69,7 @@ const SideBar = ({ children }) => {
                 state.mobileSidebar = false;
               }}
             >
-              <FaArrowRightLong className="text-3xl  text-sky-500" />
+              <FaArrowRightLong className="text-3xl  text-sky-600" />
             </div>
           </div>
 

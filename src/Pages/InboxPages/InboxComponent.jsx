@@ -61,7 +61,7 @@ export default function InboxComponent() {
                   </td>
                   <td className="py-2 text-left">Leslie Alexander</td>
                   <td className="py-2 text-left">
-                    <button className="text-blue-400 bg-blue-200 flex items-center space-x-2 my-3 px-3 rounded-xl">
+                    <button className="text-sky-700 bg-sky-200 flex items-center space-x-2 my-3 px-3 rounded-xl">
                       Derivers
                     </button>
                   </td>

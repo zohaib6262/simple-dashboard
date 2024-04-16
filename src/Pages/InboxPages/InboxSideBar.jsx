@@ -27,7 +27,7 @@ const InboxSideBar = () => {
     <>
       <div className="bg-white h-full w-64 border-r border-gray-200 flex flex-col rounded-lg my-4">
         <div className="p-4">
-          <button className="bg-sky-500 hover:bg-sky-700 text-white px-4 py-3 rounded-lg w-full">
+          <button className="bg-sky-600 hover:bg-sky-700 text-white px-4 py-3 rounded-lg w-full">
             Compose
           </button>
           <h2 className="m-3 font-bold">My Email</h2>

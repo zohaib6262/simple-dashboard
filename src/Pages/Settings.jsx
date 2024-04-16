@@ -67,7 +67,7 @@ const Settings = () => {
                   <Image className="w-10 h-10 mb-4" />
                   <p className="text-center text-gray-500 text-sm">
                     Drop your image here or,{" "}
-                    <a href="" className="text-sky-500">
+                    <a href="" className="text-sky-600">
                       browse or drag and drop.
                     </a>
                   </p>

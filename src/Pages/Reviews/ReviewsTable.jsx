@@ -69,7 +69,7 @@ const ReviewsTable = () => {
               <td className="px-4 sm:px-6 py-4 text-xs">{item.review}</td>
               <td className="px-4 sm:px-6 py-4 text-xs">{item.dateTime}</td>
               <td className="px-4 sm:px-6 py-4 whitespace-nowrap text-xs">
-                <button className="bg-sky-200 text-sky-500 rounded-s-md p-2">
+                <button className="bg-sky-200 text-sky-600 rounded-s-md p-2">
                   <item.action1 className="h-4 w-4" />
                 </button>
                 <button className="bg-sky-200 text-red-500 rounded-e-md p-2">

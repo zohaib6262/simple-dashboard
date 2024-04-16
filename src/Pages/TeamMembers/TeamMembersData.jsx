@@ -3,7 +3,7 @@ import { TeamMemberData } from "./TeamMemberData";
 
 const Card = ({ image, title, email, name }) => {
   return (
-    <div className="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden m-2 p-10 flex flex-col items-center">
+    <div className=" bg-white shadow-lg rounded-lg overflow-hidden m-4 p-10 flex flex-col items-center w-64 h-72">
       <div className="h-20 w-20 flex items-center justify-center">
         <img
           className="w-full h-full object-cover object-center rounded-full"
@@ -24,7 +24,7 @@ const Card = ({ image, title, email, name }) => {
 
 export const TeamMembersData = () => {
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-evenly">
       {TeamMemberData.map((card) => (
         <Card
           key={card.key}

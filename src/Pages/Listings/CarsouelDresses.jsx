@@ -83,7 +83,7 @@ const CarouselDresses = () => {
                     {item.discount}
                   </span>
                 </div>
-                <button className="px-6 text-sky-500 border-2 border-sky-400 rounded-2xl hover:bg-sky-500 hover:text-white">
+                <button className="px-6 text-sky-600 border-2 border-sky-400 rounded-2xl hover:bg-sky-500 hover:text-white">
                   Option
                 </button>
               </div>
