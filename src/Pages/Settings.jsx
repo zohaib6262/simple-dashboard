@@ -157,7 +157,7 @@ const Settings = () => {
                   <input
                     id="title"
                     type="text"
-                    className="mt-1 block lg:w-1/3 sm:w-1/2 rounded-md shadow-sm bg-sky-100 h-12 outline-none"
+                    className="mt-1 block w-1/3 rounded-md shadow-sm bg-sky-100 h-12 outline-none"
                   />
                 </div>
                 <div className="lg:text-center sm:text-start">
