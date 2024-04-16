@@ -12,7 +12,7 @@ export const InboxSideBarData = [
   {
     key: "1",
     path: "/inbox",
-    label: "Inbox Component",
+    label: "Inbox",
     icon: Grid,
   },
   {
