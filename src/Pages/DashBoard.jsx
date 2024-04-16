@@ -3,6 +3,8 @@ import Input from "./Header/Input";
 import Buttons from "./Header/Buttons";
 import DashBoardCard from "./DashBoard/DashBoardCard";
 
+import DashBoardTable from "./DashBoard/DashBoardTable";
+
 const DashBoard = () => {
   return (
     <>
@@ -11,8 +13,9 @@ const DashBoard = () => {
         <Buttons />
       </div>
       <div className="border-t w-full px-8 py-4 bg-white">
-        <h1 className="font-bold text-xl text-[#202224]">DashBoard</h1>
+        <h1 className="font-medium text-2xl text-[#202224]">DashBoard</h1>
         <DashBoardCard />
+        <DashBoardTable />
       </div>
     </>
   );

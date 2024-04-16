@@ -1,20 +1,7 @@
 import React, { useState } from "react";
 import { OrdersTableData } from "./OrdersTableData";
-import Modal from "./Modal"; // Assuming you have a modal component
 
 const OrdersTable = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
-
-  const handleClick = (item) => {
-    setSelectedItem(item);
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div className="overflow-x-auto">
       <table className="w-full divide-y divide-gray-200">
@@ -92,12 +79,7 @@ const OrdersTable = () => {
 
             return (
               <tr key={item.key}>
-                <td
-                  className="px-4 sm:px-6 py-4 text-xs cursor-pointer"
-                  onClick={() => handleClick(item)}
-                >
-                  {item.listingId}
-                </td>
+                <td className="px-4 sm:px-6 py-4 text-xs ">{item.listingId}</td>
                 <td className="px-4 sm:px-6 py-4 text-xs">{item.orderType}</td>
                 <td className="px-4 sm:px-6 py-4 text-xs">{item.sellerName}</td>
                 <td className="px-4 sm:px-6 py-4 text-xs">{item.category}</td>
@@ -121,9 +103,6 @@ const OrdersTable = () => {
             );
           })}
         </tbody>
-        {isModalOpen && (
-          <Modal item={selectedItem} onClose={handleCloseModal} />
-        )}
       </table>
     </div>
   );

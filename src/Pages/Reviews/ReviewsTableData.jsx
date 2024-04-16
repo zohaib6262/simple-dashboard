@@ -1,6 +1,7 @@
 import img1 from "../../assets/product1.png";
 import img2 from "../../assets/product2.jpg";
 import img3 from "../../assets/product3.png";
+
 import { Edit, Delete } from "./ReviewsIcons.jsx";
 import {
   Star,
@@ -30,7 +31,7 @@ export const ReviewsTableData = [
     img: img2,
     product: "Apple Airpods Pro (2nd Generation)  ",
     sellerName: "Fusy Kawkins",
-    product: "Smartphone",
+
     customerName: "Marvin McKinney",
     rating: [StarFill, StarFill, StarFill, StarFill, Star],
     review:
