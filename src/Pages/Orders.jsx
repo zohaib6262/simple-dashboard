@@ -12,7 +12,7 @@ const Orders = () => {
       <div className="flex columns-8 gap-6 px-8 py-4">
         <Input />
       </div>
-      <div className=" border-gray-200 w-full px-8 py-8 bg-sky-100">
+      <div className=" border-gray-200 w-full px-8 py-8">
         <div>
           <h1 className="font-bold text-xl">Orders</h1>
         </div>
@@ -35,11 +35,11 @@ const Orders = () => {
             Order Status
             <ChevronCompactDown className="inline text-center mb-1/2 w-10" />
           </button>
-          <button className="bg-white px-4 py-3 text-red-500 text-center">
+          <button className="bg-white px-4 py-3 text-[#FF6666] text-center">
             <ArrowCounterclockwise className="inline text-center mb-1/2 w-10" />
             Reset Filter
           </button>
-          <button className="bg-white px-4 py-3 rounded-r-lg text-sky-600">
+          <button className="bg-white px-4 py-3 rounded-r-lg text-[#008ECC]">
             Export Report
           </button>
         </div>

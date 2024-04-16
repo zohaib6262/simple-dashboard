@@ -40,18 +40,18 @@ const Settings = () => {
         <Input />
       </div>
 
-      <div className="border-t border-gray-300 w-full px-8 py-4 bg-sky-100">
+      <div className="border-t border-gray-300 w-full px-8 py-4">
         <h1 className=" text-2xl">Settings</h1>
         <div className="bg-white rounded-xl p-8 my-6">
           {/* Promo Code */}
           <div className="flex justify-between flex-wrap ">
-            <div className="columns-3xs h-48">
+            <div className="w-1/3 h-48">
               <h2 className="text-2xl text-left">Create Promo Code</h2>
               <span className="text-gray-400">
                 Create promotional campaigns
               </span>
             </div>
-            <div className="columns-3xl">
+            <div className="w-2/4">
               <h2 className="text-2xl ">Banner Information</h2>
               <span className="text-gray-400 my-2">Banner Image</span>
               <div
@@ -83,7 +83,7 @@ const Settings = () => {
                   <form className="flex my-2 px-6 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-sky-100">
                     <input
                       type="text"
-                      className="px-8 py-4 w-full sm:w-auto outline-none bg-sky-100"
+                      className="px-8 py-4 w-1/3 sm:w-auto outline-none bg-sky-100"
                     />
                     <div className="mt-2  ">
                       <Calendar2 className="h-10 w-8" />
@@ -95,7 +95,7 @@ const Settings = () => {
                   <form className="flex my-2 px-5 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-sky-100">
                     <input
                       type="text"
-                      className="py-4 px-8 w-full sm:w-auto outline-none bg-sky-100"
+                      className="py-4 px-8 w-1/3 sm:w-auto outline-none bg-sky-100"
                     />
                     <div className="mt-2 ">
                       <Calendar2 className="h-10 w-8" />
@@ -113,13 +113,13 @@ const Settings = () => {
 
           {/* Create Notification code */}
           <div className="flex justify-between flex-wrap mt-10">
-            <div className="columns-3xs h-48">
+            <div className="w-1/3 h-48">
               <h2 className="text-2xl text-left">Create Notifications</h2>
               <span className="text-gray-400">
                 You can create notifications here and will send it to users
               </span>
             </div>
-            <div className="columns-3xl">
+            <div className="w-2/4">
               <h2 className="text-2xl ">Create Notification</h2>
               <span className="text-gray-400 my-2">Banner Image</span>
 

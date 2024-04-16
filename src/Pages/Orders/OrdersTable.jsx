@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { OrdersTableData } from "./OrdersTableData";
+import Modal from "./Modal"; // Assuming you have a modal component
 
 const OrdersTable = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const handleClick = (item) => {
+    setSelectedItem(item);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="overflow-x-auto">
       <table className="w-full divide-y divide-gray-200">
@@ -62,45 +75,55 @@ const OrdersTable = () => {
             let paymentStatusClass;
             let orderStausClass;
             if (item.paymentStatus === "Completed") {
-              paymentStatusClass =
-                "text-green-700 bg-green-200  rounded-sm cursor-pointer";
+              paymentStatusClass = "text-[#54BCE9]  rounded-3xl cursor-pointer";
             } else if (item.paymentStatus === "Rejected") {
-              paymentStatusClass =
-                "text-orange-500 bg-orange-200  rounded-sm cursor-pointer";
+              paymentStatusClass = "text-[#FF6666] rounded-3xl cursor-pointer";
             } else if (item.paymentStatus === "Processing") {
-              paymentStatusClass =
-                "text-sky-600 bg-blue-200  rounded-sm cursor-pointer";
+              paymentStatusClass = "text-sky-600   rounded-3xl cursor-pointer";
             }
 
             if (item.orderStaus === "Completed") {
-              orderStausClass =
-                "text-green-700 bg-green-200  rounded-sm cursor-pointer";
+              orderStausClass = "text-[#54BCE9]  rounded-3xl cursor-pointer";
             } else if (item.orderStaus === "Rejected") {
-              orderStausClass =
-                "text-orange-500 bg-orange-200   rounded-sm cursor-pointer";
+              orderStausClass = "text-[#FF6666]  rounded-3xl cursor-pointer";
             } else if (item.orderStaus === "Processing") {
-              orderStausClass =
-                "text-sky-600 bg-sky-200   rounded-sm cursor-pointer";
+              orderStausClass = "text-[#8280FF] rounded-3xl cursor-pointer";
             }
 
             return (
               <tr key={item.key}>
-                <td className="px-4 sm:px-6 py-4 text-xs">{item.listingId}</td>
+                <td
+                  className="px-4 sm:px-6 py-4 text-xs cursor-pointer"
+                  onClick={() => handleClick(item)}
+                >
+                  {item.listingId}
+                </td>
                 <td className="px-4 sm:px-6 py-4 text-xs">{item.orderType}</td>
                 <td className="px-4 sm:px-6 py-4 text-xs">{item.sellerName}</td>
                 <td className="px-4 sm:px-6 py-4 text-xs">{item.category}</td>
                 <td className="px-4 sm:px-6 py-4 text-xs">{item.city}</td>
                 <td className="px-4 sm:px-6 py-4 text-xs">{item.dateTime}</td>
-                <td className={`${paymentStatusClass} px-1 sm:px-2 text-xs`}>
-                  {item.paymentStatus}
+                <td className="text-center">
+                  <div
+                    className={`${paymentStatusClass} px-1 py-3  mr-5 text-xs`}
+                  >
+                    {item.paymentStatus}
+                  </div>
                 </td>
-                <td className={`${orderStausClass} px-1 sm:px-2  text-xs`}>
-                  {item.orderStaus}
+                <td className="text-center">
+                  <div
+                    className={`${orderStausClass} px-1 py-3  mr-5  text-xs`}
+                  >
+                    {item.orderStaus}
+                  </div>
                 </td>
               </tr>
             );
           })}
         </tbody>
+        {isModalOpen && (
+          <Modal item={selectedItem} onClose={handleCloseModal} />
+        )}
       </table>
     </div>
   );

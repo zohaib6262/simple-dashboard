@@ -1,5 +1,5 @@
 import React from "react";
-import { ManageUserData } from "./ManageUserData";
+import { ManageUserData } from "./ManageUserData.jsx";
 
 const ManageUsersTable = () => {
   return (
@@ -77,11 +77,13 @@ const ManageUsersTable = () => {
                 <td className="px-4 sm:px-6 py-4 text-xs">{item.city}</td>
 
                 <td className="px-4 sm:px-6 py-4 whitespace-nowrap text-xs">
-                  <button className="bg-sky-200 text-sky-600 rounded-s-md p-2">
-                    <item.action1 className="h-4 w-4" />
+                  <button className=" text-[#008ECC] rounded-s-md p-2">
+                    {/* <item.action1 className="h-4 w-4" /> */}
+                    {item.action2}
                   </button>
-                  <button className="bg-sky-200 text-red-500 rounded-e-md p-2">
-                    <item.action2 className="h-4 w-4" />
+                  <button className=" text-[#FF6666] rounded-e-md p-2">
+                    {/* <item.action2 className="h-4 w-4" /> */}
+                    {item.action1}
                   </button>
                 </td>
               </tr>

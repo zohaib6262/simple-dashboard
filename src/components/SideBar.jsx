@@ -24,10 +24,10 @@ const RenderNavLink = ({ item }) => {
         )} */}
 
         <li
-          className={` font-medium font-primary flex mx-6 my-3 items-center ${
+          className={` font-medium font-primary flex mx-6 my-1 items-center ${
             pathname === item.path
-              ? " text-[#fff] bg-[#008ECC] rounded-lg py-3 px-2 items-center "
-              : "text-black py-3 px-2"
+              ? " text-[#fff] bg-[#008ECC] rounded-lg py-2 px-2 items-center "
+              : "text-black py-2 px-2"
           }`}
         >
           <div className=" flex gap-1">
@@ -82,14 +82,13 @@ const SideBar = ({ children }) => {
           })}
 
           <div className="py-1 border-t border-gray-200">
-            <span className="text-xs text-slate-400 pl-5">Pages</span>
+            <span className="text-xs text-slate-400 px-8">Pages</span>
             {SideBarPages.map((item) => {
               return <RenderNavLink key={item.key} item={item} />;
             })}
           </div>
 
           <div className="py-1 border-t border-gray-200">
-            <span className="text-xs text-slate-400 pl-5">Settings</span>
             {SideBarUser.map((item) => {
               return <RenderNavLink key={item.key} item={item} />;
             })}

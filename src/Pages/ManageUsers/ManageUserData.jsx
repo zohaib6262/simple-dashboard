@@ -1,10 +1,4 @@
-import {
-  Star,
-  PencilSquare,
-  Trash3,
-  StarFill,
-} from "react-bootstrap-icons/dist";
-
+import { Delete, Edit } from "../Reviews/ReviewsIcons";
 export const ManageUserData = [
   {
     key: "1",
@@ -16,8 +10,8 @@ export const ManageUserData = [
     orders: "28",
     city: "Lahore",
     dateTime: "10-6-23",
-    action1: PencilSquare,
-    action2: Trash3,
+    action1: <Edit />,
+    action2: <Delete />,
   },
   {
     key: "2",
@@ -30,8 +24,8 @@ export const ManageUserData = [
     orders: "45",
     city: "Karachi",
     dateTime: "08-11-23",
-    action1: PencilSquare,
-    action2: Trash3,
+    action1: <Edit />,
+    action2: <Delete />,
   },
   {
     key: "3",
@@ -43,8 +37,8 @@ export const ManageUserData = [
     orders: "34",
     city: "Gujranwala",
     dateTime: "05-27-22",
-    action1: PencilSquare,
-    action2: Trash3,
+    action1: <Edit />,
+    action2: <Delete />,
   },
   {
     key: "4",
@@ -56,7 +50,7 @@ export const ManageUserData = [
     orders: "33",
     city: "Faisalabad",
     dateTime: "05-27-23",
-    action1: PencilSquare,
-    action2: Trash3,
+    action1: <Edit />,
+    action2: <Delete />,
   },
 ];

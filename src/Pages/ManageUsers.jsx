@@ -9,13 +9,14 @@ import {
 } from "react-bootstrap-icons/dist";
 import PaginationManageUser from "../Pages/ManageUsers/PaginationManageUser.jsx";
 import ManageUsersTable from "./ManageUsers/ManageUsersTable";
+import { Edit } from "./Reviews/ReviewsIcons.jsx";
 const ManageUsers = () => {
   return (
     <>
       <div className="flex columns-8 gap-6 px-8 py-4">
         <Input />
       </div>
-      <div className=" border-gray-200 w-full px-8 py-8 bg-sky-100">
+      <div className=" border-gray-200 w-full px-8 py-8 ">
         <div>
           <h1 className="font-bold text-xl">Manage Users</h1>
         </div>
@@ -36,12 +37,12 @@ const ManageUsers = () => {
             <ChevronCompactDown className="inline text-center mb-1/2 w-10" />
           </button>
 
-          <button className="bg-white lg:px-4 sm:px-2 py-3 text-sky-600 text-center">
+          <button className="bg-white lg:px-4 sm:px-2 py-3 text-[#008ECC] text-center">
             <ArrowCounterclockwise className="inline text-center mb-1/2 w-10" />
             Reset Filter
           </button>
-          <button className="bg-white lg:px-4 sm:px-2 py-3 rounded-r-lg text-red-400">
-            <Trash3 />
+          <button className="bg-white lg:px-4 sm:px-2 py-3 rounded-r-lg text-[#FF6666]">
+            <Edit />
           </button>
         </div>
         <div className="bg-white my-4 rounded-xl">
