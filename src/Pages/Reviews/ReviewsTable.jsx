@@ -9,43 +9,43 @@ const ReviewsTable = () => {
           <tr>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500  tracking-wider"
             >
               Product
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500  tracking-wider"
             >
               Seller Name
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500  tracking-wider"
             >
               Cutomer Name
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500  tracking-wider"
             >
               Rating
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500  tracking-wider"
             >
               Review
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500  tracking-wider"
             >
               Date
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500  tracking-wider"
             >
               Action
             </th>
