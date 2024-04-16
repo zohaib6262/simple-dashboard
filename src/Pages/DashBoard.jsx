@@ -9,8 +9,8 @@ const DashBoard = () => {
         <Input />
         <Buttons />
       </div>
-      <div className="border-t border-gray-200 w-full px-8 py-4 bg-sky-100">
-        <h1 className="font-bold text-xl">DashBoard</h1>
+      <div className="border-t w-full px-8 py-4 bg-white">
+        <h1 className="font-bold text-xl text-[#202224]">DashBoard</h1>
       </div>
     </>
   );

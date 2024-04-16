@@ -8,7 +8,7 @@ import { FaArrowRightLong, FaChevronRight } from "react-icons/fa6";
 
 import state from "../proxyState/store";
 import { useSnapshot } from "valtio";
-import { SideBarMainData, SideBarPages, SideBarUser } from "./SideBarData";
+import { SideBarMainData, SideBarPages, SideBarUser } from "./SideBarData.jsx";
 import Navbar from "../Pages/Navbar/Navbar";
 
 const RenderNavLink = ({ item }) => {
@@ -16,24 +16,28 @@ const RenderNavLink = ({ item }) => {
 
   return (
     <>
-      <NavLink to={item.path} className="flex pr-5">
-        {pathname === item.path && (
+      <NavLink to={item.path}>
+        {/* {pathname === item.path && (
           <div className="pr-5 mt-4">
-            <span className="border-l-10 border-8 border-sky-700 rounded-r-lg"></span>
+            <span className="border-l-10 border-8 bg-[#008ECC] rounded-r-lg"></span>
           </div>
-        )}
-        <div
-          className={
+        )} */}
+
+        <li
+          className={` font-medium font-primary flex mx-6 my-3 items-center ${
             pathname === item.path
-              ? "text-white bg-sky-600 flex items-center space-x-2 my-1 rounded-xl w-full "
-              : "flex items-center space-x-2 my-1 mx-4"
-          }
+              ? " text-[#fff] bg-[#008ECC] rounded-lg py-3 px-2 items-center "
+              : "text-black py-3 px-2"
+          }`}
         >
-          <div className="py-3 flex">
-            <item.icon className="w-6 h-6 mx-4" />
-            <span>{item.label}</span>
+          <div className=" flex gap-1">
+            <span className="mt-2">
+              {pathname === item.path ? item.activeIcon : item?.icon}
+            </span>
+
+            <span className="mt-2">{item.label}</span>
           </div>
-        </div>
+        </li>
       </NavLink>
     </>
   );
