@@ -9,7 +9,7 @@ const CarouselDresses = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 50000,
+    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -53,7 +53,7 @@ const CarouselDresses = () => {
         {CarsouelDressesData.map((item) => (
           <div
             key={item.key}
-            className="rounded-2xl overflow-hidden shadow-lg bg-white relative"
+            className=" gap-8 rounded-2xl overflow-hidden shadow-lg bg-white relative "
           >
             <img
               className="w-full h-52 object-cover"

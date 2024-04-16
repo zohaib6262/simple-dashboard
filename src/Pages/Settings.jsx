@@ -77,7 +77,7 @@ const Settings = () => {
                   1600 x 1200 (4:3) recommended, up to 10MB each
                 </p>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between flex-wrap">
                 <div>
                   <h2>Start Date</h2>
                   <form className="flex my-2 px-6 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-sky-100">
@@ -103,8 +103,8 @@ const Settings = () => {
                   </form>
                 </div>
               </div>
-              <div className="text-center my-4">
-                <button className="bg-sky-600  hover:bg-sky-700 text-white px-4 py-3 rounded-lg w-48">
+              <div className="lg:text-center my-4">
+                <button className="bg-sky-600  hover:bg-sky-700 text-white px-4 py-3 rounded-lg w-36 sm:px-2 lg:px-2 md:px-2">
                   Create
                 </button>
               </div>
@@ -112,7 +112,7 @@ const Settings = () => {
           </div>
 
           {/* Create Notification code */}
-          <div className="flex justify-between flex-wrap">
+          <div className="flex justify-between flex-wrap mt-10">
             <div className="columns-3xs h-48">
               <h2 className="text-2xl text-left">Create Notifications</h2>
               <span className="text-gray-400">
@@ -157,11 +157,11 @@ const Settings = () => {
                   <input
                     id="title"
                     type="text"
-                    className="mt-1 block w-1/3 rounded-md shadow-sm bg-sky-100 h-12 outline-none"
+                    className="mt-1 block lg:w-1/3 sm:w-1/2 rounded-md shadow-sm bg-sky-100 h-12 outline-none"
                   />
                 </div>
-                <div className="text-center">
-                  <button className="bg-sky-600  hover:bg-sky-700 text-white px-4 py-3 rounded-lg w-44">
+                <div className="lg:text-center sm:text-start">
+                  <button className="bg-sky-600  hover:bg-sky-700 text-white py-3 rounded-lg w-36">
                     Send
                   </button>
                 </div>
