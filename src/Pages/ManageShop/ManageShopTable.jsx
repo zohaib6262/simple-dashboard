@@ -1,9 +1,10 @@
 import React from "react";
-import { DashBoardTableData, DownArrow } from "./DashBoardData";
+import { DownArrow } from "../DashBoard/DashBoardData";
+import { ManageShopTableData } from "./ManageShopTableData";
 
-const DashBoardTable = () => {
+const ManageShopTable = () => {
   return (
-    <div className="overflow-x-auto rounded-xl bg-[#FFFFFF]">
+    <div className="overflow-x-auto rounded-xl bg-[#FFFFFF]  mx-8">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-medium my-6">Latest Orders</h2>
         <div className="flex gap-4">
@@ -63,7 +64,7 @@ const DashBoardTable = () => {
         </thead>
       </table>
       <tbody className="bg-white divide-y divide-gray-200">
-        {DashBoardTableData.map((item) => (
+        {ManageShopTableData.map((item) => (
           <tr key={item.key}>
             <td className="px-4 sm:px-6 py-4 text-xs">{item.orderId}</td>
             <td className="px-4 sm:px-6 py-4 text-xs">
@@ -83,4 +84,4 @@ const DashBoardTable = () => {
   );
 };
 
-export default DashBoardTable;
+export default ManageShopTable;

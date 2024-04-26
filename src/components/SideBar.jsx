@@ -15,31 +15,29 @@ const RenderNavLink = ({ item }) => {
   const { pathname } = useLocation();
 
   return (
-    <>
-      <NavLink to={item.path}>
-        {/* {pathname === item.path && (
-          <div className="pr-5 mt-4">
-            <span className="border-l-10 border-8 bg-[#008ECC] rounded-r-lg"></span>
-          </div>
-        )} */}
+    <NavLink
+      to={item.path}
+      className={`flex items-center justify-start px-4 border-l-8 ${
+        pathname === item.path ? " border-[#008ECC]" : "border-transparent"
+      }`}
+      activeClassName="border-[#008ECC]"
+    >
+      <li
+        className={` font-medium font-primary flex my-1 items-center w-full mr-2${
+          pathname === item.path
+            ? " text-[#fff] bg-[#008ECC] rounded-lg py-2 px-2 items-center border-[#008ECC]"
+            : "text-black py-2 px-2"
+        }`}
+      >
+        <div className=" flex gap-1">
+          <span className="mt-2">
+            {pathname === item.path ? item.activeIcon : item?.icon}
+          </span>
 
-        <li
-          className={` font-medium font-primary flex mx-6 my-1 items-center ${
-            pathname === item.path
-              ? " text-[#fff] bg-[#008ECC] rounded-lg py-2 px-2 items-center "
-              : "text-black py-2 px-2"
-          }`}
-        >
-          <div className=" flex gap-1">
-            <span className="mt-2">
-              {pathname === item.path ? item.activeIcon : item?.icon}
-            </span>
-
-            <span className="mt-2">{item.label}</span>
-          </div>
-        </li>
-      </NavLink>
-    </>
+          <span className="mt-2">{item.label}</span>
+        </div>
+      </li>
+    </NavLink>
   );
 };
 
@@ -52,7 +50,7 @@ const SideBar = ({ children }) => {
         id="default-sidebar"
         className={`bg-white text-black  ${
           snap.mobileSidebar === false ? " sidebarHide " : ""
-        } py-2 border-r border-gray-300 lg:block fixed top-0 lg:left-0 left-0 z-40 w-64 h-screen  translate-x-0 transition-all duration-500`}
+        } py-2 border-r border-gray-300 lg:block fixed top-0 lg:left-0 left-0 z-40 w-60 h-screen  translate-x-0 transition-all duration-500`}
         aria-label="Sidebar"
       >
         <div id="scrollBar" className="h-full overflow-y-auto  ">

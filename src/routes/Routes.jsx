@@ -13,7 +13,7 @@ import Orders from "../Pages/Orders";
 import Reviews from "../Pages/Reviews";
 import TeamMembers from "../Pages/TeamMembers";
 import ManageUsers from "../Pages/ManageUsers";
-import ManageShops from "../Pages/ManageShops";
+import ManageShops from "../Pages/ManageShops.jsx";
 import Settings from "../Pages/Settings";
 import Logout from "../Pages/Logout";
 
@@ -24,6 +24,7 @@ import Draft from "../Pages/InboxPages/Draft.jsx";
 import Spam from "../Pages/InboxPages/Spam.jsx";
 import Bin from "../Pages/InboxPages/Bin.jsx";
 import Layout from "../Pages/Layout/Layout.jsx";
+
 const Routes = () => {
   return (
     <Router>

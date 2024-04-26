@@ -9,7 +9,7 @@ import OrdersTable from "./Orders/OrdersTable";
 const Orders = () => {
   return (
     <>
-      <div className="flex columns-8 gap-6 px-8 py-4">
+      <div className="flex columns-8 gap-6 px-8 py-1">
         <Input />
       </div>
       <div className=" border-gray-200 w-full px-8 py-8">

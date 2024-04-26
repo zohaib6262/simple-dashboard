@@ -2,48 +2,92 @@ import React from "react";
 
 export const Dashboard = ({ color, size }) => {
   return (
+    // <svg
+    //   width={size}
+    //   height={size}
+    //   viewBox={`0 0 ${size} ${size}`}
+    //   fill="none"
+    //   xmlns="http://www.w3.org/2000/svg"
+    // >
+    //   <rect
+    //     x="1"
+    //     y="1"
+    //     width="8"
+    //     height="10"
+    //     rx="2"
+    //     stroke={color}
+    //     stroke-width="2"
+    //   />
+    //   <rect
+    //     x="1"
+    //     y="15"
+    //     width="8"
+    //     height="6"
+    //     rx="2"
+    //     stroke={color}
+    //     stroke-width="2"
+    //   />
+    //   <rect
+    //     x="13"
+    //     y="11"
+    //     width="8"
+    //     height="10"
+    //     rx="2"
+    //     stroke={color}
+    //     stroke-width="2"
+    //   />
+    //   <rect
+    //     x="13"
+    //     y="1"
+    //     width="8"
+    //     height="6"
+    //     rx="2"
+    //     stroke={color}
+    //     stroke-width="2"
+    //   />
+    // </svg>
     <svg
       width={size}
       height={size}
-      viewBox={`0 0 ${size} ${size}`}
+      viewBox={`0 0 {size} {size}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect
-        x="1"
-        y="1"
-        width="8"
-        height="10"
-        rx="2"
+        x="3.5"
+        y="4"
+        width="7"
+        height="7"
+        rx="2.5"
         stroke={color}
-        stroke-width="2"
+        stroke-width="1.5"
       />
       <rect
-        x="1"
-        y="15"
-        width="8"
-        height="6"
-        rx="2"
+        x="3.5"
+        y="14"
+        width="7"
+        height="7"
+        rx="2.5"
         stroke={color}
-        stroke-width="2"
+        stroke-width="1.5"
       />
       <rect
-        x="13"
-        y="11"
-        width="8"
-        height="10"
-        rx="2"
+        x="13.5"
+        y="4"
+        width="7"
+        height="7"
+        rx="2.5"
         stroke={color}
-        stroke-width="2"
+        stroke-width="1.5"
       />
       <rect
-        x="13"
-        y="1"
-        width="8"
-        height="6"
-        rx="2"
+        x="13.5"
+        y="14"
+        width="7"
+        height="7"
+        rx="2.5"
         stroke={color}
-        stroke-width="2"
+        stroke-width="1.5"
       />
     </svg>
   );
