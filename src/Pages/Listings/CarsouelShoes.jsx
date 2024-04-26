@@ -52,7 +52,10 @@ const CarouselShoes = () => {
     <div className="container mx-auto px-4 relative">
       <Slider {...settings}>
         {CarouselShoesData.map((item) => (
-          <div key={item.key} className="p-4 rounded-2xl relative">
+          <div
+            key={item.key}
+            className="rounded-2xl space-x-10 gap-7 overflow-hidden shadow-lg bg-white relative "
+          >
             <div className="rounded-2xl overflow-hidden shadow-lg bg-white relative">
               <img
                 className="w-full h-52 object-cover"
