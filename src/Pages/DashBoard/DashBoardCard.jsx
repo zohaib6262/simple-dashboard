@@ -14,8 +14,8 @@ const DashBoardCard = () => {
               </div>
               <div>{card.icon}</div>
             </div>
-            <div className="mt-1">
-              <p className=" font-bold text-[#202224] text-2xl">{card.value}</p>
+            <div className="-mt-5">
+              <p className=" font-bold text-[#202224] text-xl">{card.value}</p>
             </div>
             <div className="mt-2 flex gap-2 ">
               <p>{card.upDown}</p>

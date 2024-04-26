@@ -8,7 +8,7 @@ import DashBoardTable from "./DashBoard/DashBoardTable";
 const DashBoard = () => {
   return (
     <>
-      <div className="flex flex-wrap items-center columns-8 gap-6 px-8 py-1">
+      <div className="flex flex-wrap items-center gap-8 px-8 py-1">
         <Input />
         <Buttons />
       </div>
