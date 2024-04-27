@@ -5,7 +5,10 @@ const DashBoardCard = () => {
     <div className="py-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {DashBoardData.map((card, index) => (
-          <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300 ease-in-out">
+          <div
+            key={card.Key}
+            className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300 ease-in-out"
+          >
             <div className="flex justify-between">
               <div>
                 <h2 className="ml-0 text-base  text-[#202224] font-medium">
