@@ -72,7 +72,7 @@ const Settings = () => {
                 <div className="flex flex-wrap gap-10 ">
                   <div>
                     <h2>Start Date</h2>
-                    <form className="flex my-2 px-6 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-[#EDF8FD]">
+                    <form className="flex my-2 px-3 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-[#EDF8FD]">
                       <input
                         type="text"
                         className=" py-4 w-1/3 sm:w-auto outline-none bg-[#EDF8FD]"
@@ -81,7 +81,7 @@ const Settings = () => {
                   </div>
                   <div>
                     <h2>Expiration date</h2>
-                    <form className="flex my-2 px-5 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-[#EDF8FD]">
+                    <form className="flex my-2 px-3 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-[#EDF8FD]">
                       <input
                         type="text"
                         className="py-4 w-1/3 sm:w-auto outline-none bg-[#EDF8FD]"
