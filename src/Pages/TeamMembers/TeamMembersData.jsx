@@ -1,5 +1,5 @@
 import React from "react";
-import { TeamMemberData } from "./TeamMemberData";
+import { TeamMemberData } from "./TeamMemberData.jsx";
 
 const Card = ({ image, title, email, name }) => {
   return (

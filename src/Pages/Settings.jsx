@@ -69,22 +69,22 @@ const Settings = () => {
                 </div>
               </div>
               <div className="flex flex-col justify-center items-start ">
-                <div className="flex flex-wrap  gap-10 ">
+                <div className="flex flex-wrap gap-10 ">
                   <div>
                     <h2>Start Date</h2>
-                    <form className="flex my-2 px-6 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-sky-100">
+                    <form className="flex my-2 px-6 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-[#EDF8FD]">
                       <input
                         type="text"
-                        className="px-8 py-4 w-1/3 sm:w-auto outline-none bg-sky-100"
+                        className=" py-4 w-1/3 sm:w-auto outline-none bg-[#EDF8FD]"
                       />
                     </form>
                   </div>
                   <div>
                     <h2>Expiration date</h2>
-                    <form className="flex my-2 px-5 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-sky-100">
+                    <form className="flex my-2 px-5 sm:flex-row items-center border-2 border-hidden rounded-lg overflow-hidden bg-[#EDF8FD]">
                       <input
                         type="text"
-                        className="py-4 px-8 w-1/3 sm:w-auto outline-none bg-sky-100"
+                        className="py-4 w-1/3 sm:w-auto outline-none bg-[#EDF8FD]"
                       />
                     </form>
                   </div>
@@ -120,7 +120,7 @@ const Settings = () => {
                   <input
                     id="title"
                     type="text"
-                    className="mt-1 rounded-md shadow-sm bg-sky-100 h-12 outline-none block w-full"
+                    className="mt-1 px-2 rounded-md shadow-sm bg-[#EDF8FD] h-12 outline-none block w-full"
                   />
                 </div>
                 <div className="mb-6">
@@ -132,7 +132,7 @@ const Settings = () => {
                   </label>
                   <textarea
                     id="description"
-                    className="mt-1 block rounded-md shadow-sm bg-sky-100 outline-none h-32 w-full"
+                    className="mt-1 pl-2 block rounded-md shadow-sm bg-[#EDF8FD] outline-none h-32 w-full"
                     rows="6"
                   ></textarea>
                 </div>
@@ -146,10 +146,10 @@ const Settings = () => {
                   <input
                     id="title"
                     type="text"
-                    className="mt-1 block rounded-md shadow-sm bg-sky-100 h-12 outline-none w-1/3"
+                    className="mt-1 pl-2 block rounded-md shadow-sm bg-[#EDF8FD] h-12 outline-none w-1/2"
                   />
                 </div>
-                <div className="w-1/5">
+                <div className="w-1/4">
                   <button className="bg-sky-600 hover:bg-sky-700 text-white py-3 rounded-lg w-full">
                     Send
                   </button>
