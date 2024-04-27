@@ -2,10 +2,19 @@ import React, { useState } from "react";
 import Input from "./Header/Input";
 import { TeamMembersData } from "./TeamMembers/TeamMembersData.jsx";
 import AddMember from "./TeamMembers/AddMember";
+import { TeamMemberData } from "./TeamMembers/TeamMemberData.jsx";
 
 const TeamMembers = () => {
   const [addMember, setAddMember] = useState(false);
-
+  const [addAllMemberData, setAddAllMemberData] = useState(TeamMemberData);
+  const handleData = (data) => {
+    setAddAllMemberData((prevData) => {
+      const newData = [data, ...prevData];
+      return newData;
+    });
+    console.log(addAllMemberData);
+    setAddMember(!addMember);
+  };
   const handleAddMember = () => {
     setAddMember(!addMember);
   };
@@ -16,7 +25,7 @@ const TeamMembers = () => {
         <Input />
       </div>
       {addMember ? (
-        <AddMember />
+        <AddMember handleData={handleData} />
       ) : (
         <div className="border-t border-gray-200 w-full px-8 py-4 ">
           <div className="flex justify-between my-5">
@@ -28,7 +37,7 @@ const TeamMembers = () => {
               Add a Member
             </button>
           </div>
-          <TeamMembersData />
+          <TeamMembersData addAllMemberData={addAllMemberData} />
         </div>
       )}
     </>
