@@ -146,11 +146,11 @@ const Settings = () => {
                   <input
                     id="title"
                     type="text"
-                    className="mt-1 pl-2 block rounded-md shadow-sm bg-[#EDF8FD] h-12 outline-none w-1/2"
+                    className="mt-1 pl-2 block rounded-md shadow-sm bg-[#EDF8FD] h-12 outline-none md:w-1/2 sm:w-full"
                   />
                 </div>
-                <div className="w-1/4">
-                  <button className="bg-sky-600 hover:bg-sky-700 text-white py-3 rounded-lg w-full">
+                <div>
+                  <button className="bg-sky-600 hover:bg-sky-700 text-white py-3 rounded-lg w-24">
                     Send
                   </button>
                 </div>
