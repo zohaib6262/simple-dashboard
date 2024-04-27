@@ -17,30 +17,32 @@ const Orders = () => {
           <h1 className="font-bold text-xl">Orders</h1>
         </div>
         <div className="flex my-8">
-          <button className="bg-white px-4 pt-3 pb-5 rounded-l-lg">
+          <button className="bg-white border border-gray-300 lg:px-4 pt-3 pb-5 rounded-l-lg">
             <Filter />
           </button>
 
-          <button className="bg-white px-4 py-3 ">Filter By</button>
-          <button className="bg-white px-4 py-3 ">
-            Date
+          <button className="bg-white lg:px-4 py-3 border border-gray-300">
+            <span className="text-sm">Filter By</span>
+          </button>
+          <button className="bg-white lg:px-4 py-3 border border-gray-300 ">
+            <span className="text-sm">Date</span>
             <ChevronCompactDown className="inline text-center mb-1/2 w-10" />
           </button>
 
-          <button className="bg-white px-4 py-3">
-            Category
+          <button className="bg-white lg:px-4 py-3 border border-gray-300">
+            <span className="text-sm"> Category</span>
             <ChevronCompactDown className="inline text-center mb-1/2 w-10" />
           </button>
-          <button className="bg-white px-4 py-3">
-            Order Status
+          <button className="bg-white lg:px-4 py-3 border border-gray-300">
+            <span className="text-sm"> Order Status</span>
             <ChevronCompactDown className="inline text-center mb-1/2 w-10" />
           </button>
-          <button className="bg-white px-4 py-3 text-[#FF6666] text-center">
+          <button className="bg-white lg:px-4 py-3 text-[#FF6666] text-center border border-gray-300">
             <ArrowCounterclockwise className="inline text-center mb-1/2 w-10" />
-            Reset Filter
+            <span className="text-sm"> Reset Filter</span>
           </button>
-          <button className="bg-white px-4 py-3 rounded-r-lg text-[#008ECC]">
-            Export Report
+          <button className="bg-white lg:px-4 py-3 rounded-r-lg  text-[#008ECC] border border-gray-300">
+            <span className="text-sm"> Export Report</span>
           </button>
         </div>
         <div className="bg-white my-4  rounded-lg ">

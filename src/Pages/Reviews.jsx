@@ -20,26 +20,28 @@ const Reviews = () => {
           <h1 className="font-bold text-xl">Reviews</h1>
         </div>
         <div className="flex my-8">
-          <button className="bg-white px-4 pt-3 pb-5 rounded-l-lg">
+          <button className="bg-white border border-gray-300 lg:px-4 pt-3 pb-5 rounded-l-lg">
             <Filter />
           </button>
 
-          <button className="bg-white px-4 py-3 ">Filter By</button>
-          <button className="bg-white px-4 py-3 ">
-            Date
+          <button className="bg-white lg:px-4 py-3 border border-gray-300">
+            <span className="text-sm">Filter By</span>
+          </button>
+          <button className="bg-white lg:px-4 py-3 border border-gray-300 ">
+            <span className="text-sm">Date</span>
             <ChevronCompactDown className="inline text-center mb-1/2 w-10" />
           </button>
 
-          <button className="bg-white px-4 py-3">
-            Category
+          <button className="bg-white lg:px-4 py-3 border border-gray-300">
+            <span className="text-sm"> Category</span>
             <ChevronCompactDown className="inline text-center mb-1/2 w-10" />
           </button>
 
-          <button className="bg-white px-4 py-3 text-[#008ECC] text-center">
+          <button className="bg-white lg:px-4 py-3 text-[#008ECC] text-center border border-gray-300">
             <ArrowCounterclockwise className="inline text-center mb-1/2 w-10" />
-            Reset Filter
+            <span className="text-sm"> Reset Filter</span>
           </button>
-          <button className="bg-white px-4 py-3 rounded-r-lg text-[#FF6666]">
+          <button className="bg-white lg:px-4 sm:px-2 py-3 rounded-r-lg text-[#FF6666] border border-gray-300">
             <Edit />
           </button>
         </div>
