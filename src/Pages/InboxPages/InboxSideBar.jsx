@@ -28,7 +28,7 @@ const RenderNavLink = ({ item }) => {
 const InboxSideBar = () => {
   return (
     <>
-      <div className="bg-white h-full w-56 border-r border-gray-200 flex flex-col rounded-lg my-4">
+      <div className="bg-white h-full w-48 border-r border-gray-200 flex flex-col rounded-lg my-4">
         <div className="mr-9">
           <button className="bg-[#008ECC] text-white px-2 py-3 rounded-2xl w-full">
             Compose
