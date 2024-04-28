@@ -15,6 +15,11 @@ const OrdersTable = () => {
     setIsModalOpen(false);
   };
 
+  function handleStopRemoveModal() {
+    // modal.current.close();
+    setIsModalOpen(false);
+  }
+
   return (
     <div className="overflow-x-auto border border-gray-300 rounded-l-xl rounded-e-xl">
       <table className="w-full divide-y divide-gray-200">
@@ -92,10 +97,7 @@ const OrdersTable = () => {
 
             return (
               <tr key={item.key}>
-                <td
-                  className="px-4 sm:px-6 py-4 text-xs cursor-pointer"
-                  onClick={() => handleClick(item)}
-                >
+                <td className="px-4 sm:px-6 py-4 text-xs cursor-pointer">
                   {item.listingId}
                 </td>
                 <td className="px-4 sm:px-6 py-4 text-xs ">{item.orderType}</td>
@@ -104,7 +106,12 @@ const OrdersTable = () => {
                 </td>
                 <td className="px-4 sm:px-6 py-4 text-xs ">{item.category}</td>
                 <td className="px-4 sm:px-6 py-4 text-xs ">{item.city}</td>
-                <td className="px-4 sm:px-6 py-4 text-xs ">{item.dateTime}</td>
+                <td
+                  className="px-4 sm:px-6 py-4 text-xs "
+                  onClick={() => handleClick(item)}
+                >
+                  {item.dateTime}
+                </td>
                 <td className="text-center">
                   <div
                     className={`${paymentStatusClass} px-1 py-3  mr-5 text-xs`}
@@ -123,14 +130,16 @@ const OrdersTable = () => {
             );
           })}
         </tbody>
-        {isModalOpen && (
-          <Modal
-            open={isModalOpen}
-            item={selectedItem}
-            close={handleCloseModal}
-          />
-        )}
       </table>
+      {isModalOpen && (
+        <Modal
+          open={isModalOpen}
+          item={selectedItem}
+          close={handleCloseModal}
+          onCancel={handleStopRemoveModal}
+          onConfirm={handleCloseModal}
+        />
+      )}
     </div>
   );
 };
