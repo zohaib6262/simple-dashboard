@@ -15,7 +15,7 @@ import {
 } from "./InboxComponentIcons";
 export default function InboxComponent() {
   return (
-    <div className="flex flex-col ml-4 bg-white my-4 rounded-lg w-9/12">
+    <div className="flex flex-col ml-4 bg-white my-4 rounded-lg w-auto">
       <div className="flex flex-wrap w-auto justify-between mx-2 mb-8">
         <div className="w-52 ">
           <input

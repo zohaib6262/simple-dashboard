@@ -16,55 +16,55 @@ const OrdersTable = () => {
   };
 
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto border border-gray-300 rounded-l-xl rounded-e-xl">
       <table className="w-full divide-y divide-gray-200">
-        <thead className="bg-gray-50">
-          <tr>
+        <thead className="bg-gray-50 ">
+          <tr className="border-b border-gray-300">
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left  text-xs font-bold text-[#202224] uppercase tracking-wider"
             >
               Listing ID
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
             >
               Order Type
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
             >
               Seller Name
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
             >
               Category
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
             >
               City
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
             >
               Date-Time
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
             >
               Payment Status
             </th>
             <th
               scope="col"
-              className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
             >
               Order Status
             </th>
@@ -98,11 +98,13 @@ const OrdersTable = () => {
                 >
                   {item.listingId}
                 </td>
-                <td className="px-4 sm:px-6 py-4 text-xs">{item.orderType}</td>
-                <td className="px-4 sm:px-6 py-4 text-xs">{item.sellerName}</td>
-                <td className="px-4 sm:px-6 py-4 text-xs">{item.category}</td>
-                <td className="px-4 sm:px-6 py-4 text-xs">{item.city}</td>
-                <td className="px-4 sm:px-6 py-4 text-xs">{item.dateTime}</td>
+                <td className="px-4 sm:px-6 py-4 text-xs ">{item.orderType}</td>
+                <td className="px-4 sm:px-6 py-4 text-xs ">
+                  {item.sellerName}
+                </td>
+                <td className="px-4 sm:px-6 py-4 text-xs ">{item.category}</td>
+                <td className="px-4 sm:px-6 py-4 text-xs ">{item.city}</td>
+                <td className="px-4 sm:px-6 py-4 text-xs ">{item.dateTime}</td>
                 <td className="text-center">
                   <div
                     className={`${paymentStatusClass} px-1 py-3  mr-5 text-xs`}

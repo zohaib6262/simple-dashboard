@@ -4,55 +4,55 @@ import { ManageUserData } from "./ManageUserData.jsx";
 const ManageUsersTable = () => {
   return (
     <>
-      <div className="overflow-x-auto rounded-xl">
+      <div className="overflow-x-auto border border-gray-300 rounded-l-xl rounded-e-xl">
         <table className="w-full h-full divide-y divide-gray-200 mb-6">
           <thead className="bg-gray-50">
-            <tr>
+            <tr className="border-b border-gray-300">
               <th
                 scope="col"
-                className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-black-700 uppercase tracking-wider"
+                className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
               >
                 User ID
               </th>
               <th
                 scope="col"
-                className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-black-700 uppercase tracking-wider"
+                className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
               >
                 User Name
               </th>
               <th
                 scope="col"
-                className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-black-700 uppercase tracking-wider"
+                className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
               >
                 User Type
               </th>
               <th
                 scope="col"
-                className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-black-700 uppercase tracking-wider"
+                className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
               >
                 Email
               </th>
               <th
                 scope="col"
-                className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-black-700 uppercase tracking-wider"
+                className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
               >
                 Total Spent
               </th>
               <th
                 scope="col"
-                className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-black-700 uppercase tracking-wider"
+                className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
               >
                 Orders
               </th>
               <th
                 scope="col"
-                className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-black-700 uppercase tracking-wider"
+                className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
               >
                 City
               </th>
               <th
                 scope="col"
-                className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-black-700 uppercase tracking-wider"
+                className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] uppercase tracking-wider"
               >
                 Action
               </th>

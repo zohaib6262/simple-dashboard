@@ -20,7 +20,7 @@ const Reviews = () => {
           <h1 className="font-bold text-xl">Reviews</h1>
         </div>
         <div className="flex my-8">
-          <button className="bg-white border border-gray-300 lg:px-4 pt-3 pb-5 rounded-l-lg">
+          <button className="bg-white border border-gray-300 rounded-l-lg lg:px-4 pt-3 pb-5 ">
             <Filter />
           </button>
 
