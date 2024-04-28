@@ -41,7 +41,7 @@ const Modal = ({ open, item, close, onConfirm, onCancel }) => {
                     <Image />
                   </div>
                 </form>
-                <form className="flex  border-hidden rounded-lg overflow-visible bg-[#EDF8FD]">
+                <form className="flex flex-wrap  border-hidden rounded-lg overflow-visible bg-[#EDF8FD]">
                   <input
                     className="px-4 rounded-xl py-2 w-40 bg-[#EDF8FD] outline-none"
                     type="text"
@@ -53,7 +53,7 @@ const Modal = ({ open, item, close, onConfirm, onCancel }) => {
                 </form>
               </div>
 
-              <div className="flex justify-center gap-8 mt-5  items-center px-4 py-3">
+              <div className="flex flex-wrap justify-center gap-8 mt-5  items-center px-4 py-3">
                 <button
                   onClick={() => {
                     onCancel();
