@@ -71,7 +71,7 @@ const Modal = ({ open, item, close, onConfirm, onCancel }) => {
                     }}
                     className="px-4 py-2 bg-[#54C48D] text-white text-base font-medium rounded-md w-36  shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
                   >
-                    Download CSV
+                    Download CVS
                   </button>
                 </div>
               </div>
