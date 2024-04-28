@@ -48,7 +48,7 @@ const SideBar = ({ children }) => {
     <div className="">
       <aside
         id="default-sidebar"
-        className={`bg-white text-black  ${
+        className={`bg-white text-black h-full  ${
           snap.mobileSidebar === false ? " sidebarHide " : ""
         } py-2 border-r border-gray-300 lg:block fixed top-0 lg:left-0 left-0 z-40 w-60 h-screen  translate-x-0 transition-all duration-500`}
         aria-label="Sidebar"

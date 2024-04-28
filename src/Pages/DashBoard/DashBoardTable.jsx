@@ -4,7 +4,7 @@ import { DashBoardTableData, DownArrow } from "./DashBoardData";
 const DashBoardTable = () => {
   return (
     <>
-      <div className="overflow-x-auto rounded-xl bg-[#FFFFFF]">
+      <div className="rounded-xl bg-[#FFFFFF] ">
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-medium my-6">Latest Orders</h2>
           <div className="flex gap-4">
@@ -16,10 +16,11 @@ const DashBoardTable = () => {
           </div>
         </div>
       </div>
-      <div className="table">
+
+      <div className="overflow-x-auto rounded-l-xl rounded-e-xl">
         <table className="w-full h-full mb-6">
           <thead className="">
-            <tr className="bg-[#EDF8FD] rounded-full">
+            <tr className="bg-[#EDF8FD] rounded-full rounded-l-xl rounded-e-xl">
               <th
                 scope="col"
                 className="px-4 sm:px-6 py-3 text-left text-xs font-bold text-[#202224] tracking-wider"
